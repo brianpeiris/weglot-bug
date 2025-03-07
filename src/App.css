@@ -1,0 +1,13 @@
+#root {
+}
+.inline-button {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+  appearance: none;
+}
