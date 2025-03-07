@@ -1,6 +1,6 @@
-# weglot bug
+# Weglot bugs
 
-Demonstrates "removeChild" and "insertBefore" bugs with weglot when used with React.
+Demonstrates "removeChild" and "insertBefore" bugs with Weglot when used with React.
 
 This simple application uses vite to transform and serve the react code.
 
