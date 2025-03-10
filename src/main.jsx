@@ -4,10 +4,11 @@ import "./index.css";
 import Text from "./Text.jsx";
 import Spans from "./Spans.jsx";
 
-const { pathname } = window.location;
+const { search } = window.location;
+const searchKeys = Array.from(new URLSearchParams(search).keys());
 
 let App = Text;
-if (pathname === "/spans") {
+if (searchKeys.includes("spans")) {
   App = Spans;
 }
 
