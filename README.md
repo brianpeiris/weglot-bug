@@ -19,3 +19,8 @@ This simple application uses vite to transform and serve the react code.
 7. Click on the "Toggle frog" button and see the error in the console.
 8. Refresh the page.
 9. While still in French, click on the "Toggle animal" button and see the error in the console.
+
+
+## Solution
+
+The Weglot support team has provided a solution to the original bug. As seen in `src/Spans.jsx`, the solution is to wrap text in span nodes so that they aren't just disconnected text nodes that may cause a mismatch in the DOM manipulation.

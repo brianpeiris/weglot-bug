@@ -1,15 +1,18 @@
 import { useState } from "react";
-import "./App.css";
+import "./Text.css";
 
-function App() {
+function Text() {
   const [showAnimal, setShowAnimal] = useState(true);
   const [showFrog, setShowFrog] = useState(false);
   const [info, setInfo] = useState("");
   function handleClick() {
-    setInfo(Date.now() + " clicked");
+    const text = Date.now() + " clicked";
+    console.log(text);
+    setInfo(text);
   }
   return (
     <div>
+      <h1>Text Nodes</h1>
       <div>
         The quick brown fox jumped
         {showAnimal ? (
@@ -52,4 +55,4 @@ function App() {
   );
 }
 
-export default App;
+export default Text;

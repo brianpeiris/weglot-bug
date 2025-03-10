@@ -1,10 +1,18 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import Text from "./Text.jsx";
+import Spans from "./Spans.jsx";
 
-createRoot(document.getElementById('root')).render(
+const { pathname } = window.location;
+
+let App = Text;
+if (pathname === "/spans") {
+  App = Spans;
+}
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);
